@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    min-height: 10rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #333;
+    margin-bottom: 1rem;
+}
+
+.avatar-icon {
+    font-size: 4rem;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #f57c00;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e65100;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+}
+
+.link {
+    color: #1e90ff;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    color: #f57c00;
+}
+
+/* Flexbox utility classes */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap {
+    gap: 1rem;
+}
